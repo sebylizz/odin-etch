@@ -3,36 +3,45 @@ body{
 }
 
 .container {
-  background-color: lightgrey;
-  width: 500px;
-  height: 500px;
-  border: 3px solid blue;
+  background-color: grey;
+  width: 700px;
+  height: 700px;
+  border: 3px solid peachpuff;
   margin: 10px auto;
   display: grid;
 }
 
 .item {
   border: 1px solid grey;
-  background-color: darkgrey;
+  background-color: white;
 }
 
 .container:hover {
-  cursor: pointer;
+  cursor: crosshair;
 }
 
 .buttons{
   margin: auto;
-  width: 250px;
-  padding: 10px;
-  border: 1px solid black;
+  width: 300px;
+  padding: px;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 15px;
 }
 
-.buttons div{
-  align-items: center;
-  color: peachpuff;
-  border: none;
+.buttons button{
+  background-color: peachpuff;
+  padding: 2px 15px;
+  border-radius: 5px;
+  transition-duration: 0.6s;
+  font-size: 25px;
+  font-family: "Papyrus", "Courier New";
+}
+
+.buttons button:hover {
+  background-color: pink;
+  color: white;
+  cursor: pointer;
 }
