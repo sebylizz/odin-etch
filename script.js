@@ -14,7 +14,9 @@ function newCol(){
 }
 
 function newCol2(tar){
-    tar.style.backgroundColor = curcol;
+    if (tar != null && tar.parentElement != null && tar.parentElement.id === 'main'){
+        tar.style.backgroundColor = curcol;
+    }
 }
 
 function reset(){
