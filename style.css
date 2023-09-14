@@ -19,3 +19,20 @@ body{
 .container:hover {
   cursor: pointer;
 }
+
+.buttons{
+  margin: auto;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.buttons div{
+  align-items: center;
+  color: peachpuff;
+  border: none;
+}
