@@ -13,11 +13,25 @@ function newCol(){
     this.style.backgroundColor = curcol;
 }
 
+function newCol2(tar){
+    tar.style.backgroundColor = curcol;
+}
+
 function reset(){
     let arr = main.querySelectorAll("div");
     for (i = 0; i < arr.length; i++){
         arr[i].style.backgroundColor = "white";
     }
+}
+
+const paintTouch = (e) => {
+    e.preventDefault();
+    let myLocation = e.changedTouches[0];
+    let realTarget = document.elementFromPoint(
+        myLocation.clientX,
+        myLocation.clientY
+    );
+    newCol2(realTarget);
 }
 
 function newgrid(size){
@@ -37,6 +51,8 @@ function newgrid(size){
         item.addEventListener("mouseover", newCol);
         main.appendChild(item);
     }
+    main.addEventListener('touchmove', paintTouch);
+    main.addEventListener('touchstart', paintTouch);
 }
 
-newgrid(32);
+newgrid(50);
