@@ -6,7 +6,7 @@ function black(){
 }
 
 function pink(){
-    curcol = "pink";
+    curcol = "lightpink";
 }
 
 function newCol(){
