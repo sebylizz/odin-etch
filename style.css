@@ -1,0 +1,21 @@
+body{
+  background-color: lightgrey;
+}
+
+.container {
+  background-color: lightgrey;
+  width: 500px;
+  height: 500px;
+  border: 3px solid blue;
+  margin: 10px auto;
+  display: grid;
+}
+
+.item {
+  border: 1px solid grey;
+  background-color: darkgrey;
+}
+
+.container:hover {
+  cursor: pointer;
+}
