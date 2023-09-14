@@ -45,3 +45,12 @@ body{
   color: white;
   cursor: pointer;
 }
+
+.gridsize {
+  background-color: peachpuff;
+  padding: 2px 10px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-family: "Papyrus", "Courier New";
+  width: 100px;
+}
